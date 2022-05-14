@@ -1541,7 +1541,6 @@ int cam_flash_pmic_gpio_pkt_parser(
 					"Apply setting failed: %d",
 					rc);
 
-#ifdef CONFIG_BOARD_PSYCHE
 			//xiaomi add start
 			if(rc && CAM_FLASH_STATE_START == fctrl->flash_state)
 			{
@@ -1550,7 +1549,6 @@ int cam_flash_pmic_gpio_pkt_parser(
 				return rc;
 			}
 			//xiaomi add end
-#endif
 
 			fctrl->flash_state = CAM_FLASH_STATE_CONFIG;
 			break;
