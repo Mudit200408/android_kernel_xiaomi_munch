@@ -1,3 +1,13 @@
+## Clang ##
+```bash
+git clone https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone.git --depth=1 prebuilts/clang/host/linux-x86/clang-aosp
+```
+
+## KernelSu ##
+```bash
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+```
+
 Linux kernel
 ============
 
